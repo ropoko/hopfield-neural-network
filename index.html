@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rede Hopfield</title>
+</head>
+<body>
+	<div class="container">
+		<div>
+			<section class="matrices">
+				<button id="button1" type="button">1</button>
+				<button id="button2" type="button">2</button>
+				<button id="button3" type="button">3</button>
+				<button id="button4" type="button">4</button>
+			</section>
+
+			<canvas width="250" height="450" id="canvas"></canvas>
+
+			<div>
+				<button id="buttonNoise" type="button">Adicionar Ruído</button>
+			</div>
+		</div>
+
+		<div>
+			<p>Matriz Resultante</p>
+
+			<canvas width="250" height="450" id="canvasResposta"></canvas>
+
+			<div>
+				<button id="btnResposta" type="button">Resposta</button>
+				<button id="btnLimpar" type="button">Limpar</button>
+			</div>
+		</div>
+	</div>
+
+	<script type="module" src="./numbers.js"></script>
+	<script type="module" src="./main.js"></script>
+	<script type="module" src="./hopfield.js"></script>
+
+	<style scoped>
+		.matrices {
+			padding: 1rem 0;
+		}
+
+		#buttonNoise {
+			margin-top: 1rem;
+		}
+
+		.container {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			padding: 1rem;
+		}
+	</style>
+</body>
+</html>
